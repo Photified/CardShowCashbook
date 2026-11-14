@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="theme-color" content="#101b1a"><meta name="description" content="Your card show, counted. Track sales, purchases and the cash in your box. Works offline, no account needed."><title>Card Show Cashbook</title>
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" type="image/png" href="./icons/icon-192.png"><link rel="apple-touch-icon" href="./icons/icon-192.png"><link rel="stylesheet" href="./style.css">
+<script>try{document.documentElement.dataset.theme=localStorage.getItem('cashbook-theme')||'dark'}catch{}</script>
+</head>
+<body>
+<header class="header"><a class="brand" href="./" aria-label="Card Show Cashbook home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32"><rect x="6" y="7" width="18" height="22" rx="3" transform="rotate(-12 6 7)"/><rect x="11" y="3" width="17" height="23" rx="3"/><path d="M16 11h7m-7 5h7m-7 5h3"/></svg></span><span>Card Show<span class="brand-sub">CASHBOOK</span></span></a><div class="header-actions"><button class="text-button" id="install">↓ <span>Install app</span></button><button class="icon-button" id="theme" aria-label="Switch colour theme">◐</button><button class="icon-button" id="settings" aria-label="Backups and app information"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 6h14M5 12h14M5 18h14"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="9" cy="18" r="2"/></svg></button></div></header>
+<main id="app"></main>
+<footer><span class="dot"></span> Saved on this device <span class="footer-sep">/</span> CAD <span class="footer-sep">/</span> Ready offline after first visit</footer>
+<dialog id="modal"><div id="modal-content"></div></dialog><div id="toast" role="status" aria-live="polite"></div><input type="file" id="restore-file" accept="application/json,.json" hidden>
+<script type="module" src="./app.js"></script>
+</body></html>
